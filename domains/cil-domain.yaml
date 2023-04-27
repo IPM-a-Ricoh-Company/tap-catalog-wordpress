@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: cloud-innovation-lab
+  description: Everything deployed in Cloud Innovation Lab
+spec:
+  owner: it-dept

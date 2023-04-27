@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mysql
+  description: Stores Wordpress application database
+spec:
+  type: database
+  owner: backend
+  system: wordpress

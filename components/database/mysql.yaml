@@ -6,7 +6,7 @@ metadata:
   tags:
     - sql
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app=mysql-db,tier=backend'
+    'backstage.io/kubernetes-label-selector': 'app=mysql,tier=backend'
 spec:
   type: service
   lifecycle: experimental
