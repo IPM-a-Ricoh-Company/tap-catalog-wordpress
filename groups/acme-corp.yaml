@@ -10,3 +10,15 @@ spec:
     email: acme@acme-corp.com
     picture: https://acme-corp-images.s3.eu-south-2.amazonaws.com/acme-logo.jpge
   children: [dev]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: acme-groups
+  description: ACME groups location
+spec:
+  targets:
+    - ./it-dept.yaml
+    - ./dev.yaml
+    - ./frontend.yaml
+    - ./backend.yaml
