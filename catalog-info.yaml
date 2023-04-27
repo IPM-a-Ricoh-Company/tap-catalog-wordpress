@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: wordpress-catalog-info
+  description: A sample catalog for the wordpress application
+spec:
+  targets:
+    - ./components/frontend/wordpress.yaml
+    - ./components/database/mysql.yaml
+    - ./groups/acme-corp.yaml
+    - ./systems/wordpress-system.yaml
+    - ./resources/mysql-resource.yaml
+    - ./domains/cil-domain.yaml

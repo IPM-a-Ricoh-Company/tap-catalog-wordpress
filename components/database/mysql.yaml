@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mysql
+  description: MySQL database
+  tags:
+    - sql
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app=mysql-db,tier=backend'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: backend
+  system: wordpress

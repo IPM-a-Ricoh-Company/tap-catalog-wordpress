@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: wordpress
+  description: Wordpress frontend
+  tags:
+    - wordpress
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app=wordpress,tier=frontend'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: frontend
+  system: wordpress
+  dependsOn: [Component:mysql]

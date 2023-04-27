@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev
+  description: The development team
+spec:
+  type: team
+  profile:
+    displayName: Development Team
+    picture: https://acme-corp-images.s3.eu-south-2.amazonaws.com/dev-logo.jpg
+  parent: it-dept
+  children: [frontend, backend]

@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: acme-corp
+  description: Corporacion ACME
+spec:
+  type: organization
+  profile:
+    displayName: ACME Corporation
+    email: acme@acme-corp.com
+    picture: https://acme-corp-images.s3.eu-south-2.amazonaws.com/acme-logo.jpge
+  children: [dev]

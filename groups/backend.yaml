@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: backend
+  description: Backend dev team
+spec:
+  type: team
+  profile:
+    displayName: Backend Team
+    picture: https://acme-corp-images.s3.eu-south-2.amazonaws.com/dev-logo.jpg
+  parent: dev
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: coyote
+spec:
+  profile:
+    displayName: Coyote
+    email: coyote@acme-corp.com
+    picture: https://acme-corp-images.s3.eu-south-2.amazonaws.com/coyote.jpg
+  memberOf: [backend]

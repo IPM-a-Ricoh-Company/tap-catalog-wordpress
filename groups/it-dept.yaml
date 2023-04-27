@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: it-dept
+  description: The IT departament
+spec:
+  type: departament
+  profile:
+    displayName: IT Departament
+    picture: https://acme-corp-images.s3.eu-south-2.amazonaws.com/servers-logo.png
+  parent: acme-corp
+  children: [dev]
